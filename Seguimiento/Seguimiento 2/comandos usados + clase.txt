@@ -1,0 +1,49 @@
+Crear directorio
+mkdir
+Editor de texto
+vi + nombre
+presiono i (aparece INSERT)
+guardar -> :wq salir q solo salir 
+Leer texto 
+cat + nombre del archivo
+Editor de tecto (alternativa)
+yum install nano
+nano texto
+Leer texto (alternativo) 
+more texto
+less texto
+Remover (Eliminar directorios y archivos)
+rm 
+Historial de comandos que escribi en la consola
+history
+Manual del comando
+man ls
+Cambiar nombre archivo o carpeta o moverlo a otro directorio
+mv texto hoja-de-vida 
+mv hoja-de-vida adios/
+Copiar archivo 
+cp -a (para que copie los mismos permisos)
+
+Pasos para entrar a los parametros para el kernel:
+
+en el arranque
+presiona las fechas
+presiona la tecla e y cambia de root rhgb quiet a root rd.break
+ctrl + x
+cuando me salga la consola miro las unidades que estan montadas con el comando mount 
+buscamos sysroot miramos los permisos (debe tener ro -read only-) 
+ejecutamos el siguiente comando mount -o rw.remount /sysroot/  -----> mount -oremount, rw /sysroot
+observamos que cambia de ro a rw (lectura y escritura)
+oprimo el comando chroot /sysroot/ 
+ahora establecemos las contraseña con el comando passwd root
+escribimos la nueva contraseña 
+ahora para que tome los cambios hacemos el comando: touch /.autorelabel (para que cuando reinicie guarde los cambios) 
+exit
+exit (las dos veces) 
+cuando el sistema arranque debo de poder arrancar con este usuario (root + la contraseña que pusimos) 
+
+
+
+TAREA:
+
+Investigar que es y como puedo instalar una vpn 
