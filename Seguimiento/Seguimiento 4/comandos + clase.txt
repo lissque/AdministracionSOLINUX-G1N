@@ -1,0 +1,54 @@
+Permisos:
+
+r : read  ---> 4 (valor)
+w: write ---> 2
+x: execute ---> 1						VISUDO (No pide contraseña para una accion con muchos permisos)
+
+
+U(user)	G(group)	O(others)
+421=7		421=7		421=7		Permiso 777
+--x=1		r--=4		-w-=2		Permiso 142
+
+Comando: 
+
+CHMOD 777 archivo(directorio)
+
+CHMOD U+r
+	U=rwx
+
+Cambiar propietario de un archivo 
+
+chown usuario:grupo archivo(directorio)
+
+
+Archivo de configuraciones : etc
+
+Mirar: cat etc/passwd --> usuarios del sistema, usuarios de los procesos (sin bash --> no se puede loguear)
+
+
+Usuario 
+
+-que no se pueda loguear: useradd alejandro -s /sbin/nologin (no acceso al sistema sin bash)
+-que se pueda logear: usermor alejandro -s /bin/bash
+-eliminar usuario: userdel alejandro 
+
+
+
+
+COSAS QUE SE LE PUEDEN HACER AL USUARIO:
+
+
+crear grupo: groupadd seguridad
+ver los grupos: cat /etc/group
+
+crear usuario con id y lo agregamos al grupo: useradd lissette -u 7777 -g seguridad
+ver informacion del usuario: id (haberse logueado)
+
+ver usuarios: cat /etc/passwd
+
+
+useradd --> agregar usuario
+usermod --> modificar usario
+userdel --> eliminar usuario
+
+

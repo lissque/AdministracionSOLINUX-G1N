@@ -1,0 +1,25 @@
+Comando tar ---> comprimir y descomprimir archivos y directorios 
+
+tar -cvf --> ejemplocomprimido.tar /home/directorio
+
+    -c --> crear el comprimido
+    -v --> verbose, log, observar comportamiento
+    -f --> el nombre del comprimido
+
+
+tar -xvf ejemplocomprimido.tar
+tar -xvf ejemplocomprimido.tar -C /xxx/algunaruta
+
+Listar
+tar -tvf ejemplocomprimido.tar 
+
+Descomprimir multiples archivos 
+tar -xvf ejemplo.tar "file1" "file2"
+
+Comprimir multiples archivos
+tar -cf ejemplo.tar bar foo
+
+
+pwd --> saber en donde estoy
+
+Tarea: investigar compresion en otros formatos
