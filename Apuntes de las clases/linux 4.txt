@@ -1,0 +1,36 @@
+Manejo de los procesos
+
+servicio proceso: conjunto de instrucciones que cumplen una funcion 
+directorio que ejecuta un script ejecutando archivos
+
+comando top -> procesos (pantalla mas administrativa - filtro)  load average 5 minutos, 10 minutos, 15 minutos procesos en el servidor
+comando uptime -> saber tiempo que una máquina o servidor lleva activo
+ps -> permite ver los procesos que se estan ejecutando en nuestro sistema 
+systemctl -> depende de la bandera para gestionar servicios 
+
+
+versiones < 7 redhat
+/etc/init/proceso
+
+versiones>= 7
+
+systemctl
+
+systemctl status httpd
+systemctl stop httpd
+
+bandera necesaria para detener los procesos correctamente kill -9 idproceso
+
+
+df -h particion disco 
+df -Th tipo de particion 
+
+Tipos de particion 
+
+° ext2, ext3, ext4 -> puede aumentar y disminuir pero no en caliente
+° xfs -> Ingresar a un disco duro en caliente y asignar a un servidor encendido  -> puede aumentar pero no disminuir
+
+
+Tamaño directorio 
+
+Ej: du -sh /directorio

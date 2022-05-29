@@ -14,3 +14,5 @@ Lo que muestra
 >archivo
 1>archivo
 2>archivo-malo
+
+

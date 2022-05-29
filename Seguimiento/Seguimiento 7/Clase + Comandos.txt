@@ -1,0 +1,31 @@
+Firewall 
+firewall-cmd --list-all  --> Lista los puertos
+
+Agregar puerto a un firewall:
+
+sudo firewall-cmd --zone=public --permanent --add-port-3306/tcp
+firewall-cmd --reload
+
+Primero probar con telnet si no funciona se abre el puerto 
+
+telent ip puerto
+
+Si no esta instalado 
+yum install firewalld
+systemctl start firewalld  --> iniciar el servicio
+systemctl statud firewalld --> estado del servicio
+
+
+DNS
+cat /etc/resolv.config 
+
+Gateway
+route -n
+
+Selinux (NSA)
+
+
+cat /etc/selinux/config
+
+getenforce
+setenforce 1|0  (0 permisivo | 1 enforcing)
