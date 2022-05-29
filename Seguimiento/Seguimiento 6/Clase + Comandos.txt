@@ -1,0 +1,18 @@
+Redirecciones y Tuberias
+
+>   -Cambia el contenido del archivo de texto
+>>  -Agrega y mantiene el contenido anterior 
+
+comando | comando
+
+Lo que muestra
+
+0 stdin --Todo
+1 stdout --Con errores
+2 sterr --Sin errores
+
+>archivo
+1>archivo
+2>archivo-malo
+
+

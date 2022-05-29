@@ -1,0 +1,28 @@
+Instalar epel-release
+
+yum install epel-release
+
+Comando htop para ver 
+
+htop se sale con q
+
+Comando jobs - tareas ejecutandose en segundo plano 
+
+sleep 100 (100 segundo mientras el proceso se ejecuta) 
+detener con ctrl+c
+
+para volverlo a procesos principales 
+
+fg + %identificador 
+
+el identificador lo obtengo con jobs
+
+ctrl+z (detiene el proceso --> a segundo plano)
+
+comando nice dar prioridad a un proceso que vamos a iniciar 
+
+nice -n (prioridad#) sleep &
+
+
+
+chgrp nombregrupo directorio/
